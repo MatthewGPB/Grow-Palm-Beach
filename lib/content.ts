@@ -32,13 +32,13 @@ export const images = {
 export const clientLogos = [
   {
     name: "Hector's Car Wash",
-    url: '/images/hectors-car-wash-logo.png',
+    url: '/images/hectors_car_wash_logo.png',
   },
   { name: 'La Esquina Guatemalteca', 
     url: '/images/laeg_logo.png' 
   },
   { name: 'PAM Executive Parking',
-     url: '/images/PAM_Logo.png' 
+     url: '/images/PAM_logo.png' 
     },
   { name: 'Richard L. Becker, Author',
      url: '/images/RLB_Logo.png' 
