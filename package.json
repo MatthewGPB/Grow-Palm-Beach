@@ -1,6 +1,6 @@
 {
   "name": "grow-palm-beach",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.1.11",
+    "next": "^15.1.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

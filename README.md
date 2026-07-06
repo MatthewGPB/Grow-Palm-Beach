@@ -1,6 +1,6 @@
-# Grow Palm Beach — Website
+# Grow Palm Beach — Website v2
 
-Built with Next.js 15, deployed on Vercel. Zero-config, modern, fast.
+Next.js 15 site with three-tier pricing, AI-optimization positioning, and founder-led voice. Deployed on Vercel.
 
 ## Quick start
 
@@ -9,144 +9,21 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Project structure
-
-```
-gpb-next/
-├── app/
-│   ├── layout.tsx          # Root layout, metadata, fonts, structured data
-│   ├── page.tsx            # Homepage (composes all section components)
-│   ├── globals.css         # Design tokens + shared styles
-│   ├── sitemap.ts          # Auto-generated sitemap.xml
-│   ├── robots.ts           # Auto-generated robots.txt
-│   └── book-call/
-│       ├── page.tsx        # Book Call page
-│       └── page.module.css # Book Call styles
-├── components/             # All section components, each with its own CSS module
-│   ├── Header.tsx + .module.css
-│   ├── Footer.tsx + .module.css
-│   ├── Hero.tsx + .module.css
-│   ├── Logos.tsx + .module.css
-│   ├── Stats.tsx + .module.css
-│   ├── Services.tsx + .module.css
-│   ├── Process.tsx + .module.css
-│   ├── Testimonials.tsx + .module.css
-│   ├── CaseStudy.tsx + .module.css
-│   ├── Founder.tsx + .module.css
-│   ├── Guarantee.tsx + .module.css
-│   ├── FAQ.tsx + .module.css
-│   ├── CTA.tsx + .module.css
-│   └── BookCallFAQ.tsx + .module.css
-└── lib/
-    └── content.ts          # ⭐ ALL EDITABLE CONTENT LIVES HERE
-```
-
 ## Editing content
 
-**One file controls everything: `lib/content.ts`**
+Everything lives in **`lib/content.ts`** — pricing, testimonials, FAQs, images, contact info. Edit, save, push. Vercel auto-deploys.
 
-That's where all text, image URLs, testimonials, services, FAQs, and contact info live. Open it in VS Code, edit the values, save. You don't need to touch any other file to change copy.
+## Key structure
 
-### Changing images
+- Homepage flow: Hero → Logos → AI stats → **Pricing (3 plans)** → Stats → Process → Testimonials → Case study → Founder → FAQ → CTA
+- The 3x guarantee lives inside the Full Growth pricing card + a note under the pricing grid + the FAQ. It does NOT apply site-wide.
+- Book Call page: 15-minute call framing, Calendly embedded.
 
-1. Upload your image (Shopify Files, or any image host, or `/public/images/`).
-2. Copy the URL.
-3. Open `lib/content.ts` and paste it into the matching slot.
+## Images
 
-```ts
-export const images = {
-  hero: 'https://cdn.shopify.com/...',
-  founder: 'https://cdn.shopify.com/...',
-  caseStudy: '',  // paste here
-};
-```
+Local images go in `public/images/` and are referenced as `/images/filename.jpg` in `lib/content.ts`.
+Targets: hero/founder ~1000-1200px wide JPG under 200KB; logos PNG under 50KB; OG image exactly 1200x630.
 
-### Changing testimonials
+## Deploy
 
-```ts
-export const testimonials = [
-  {
-    quote: "Your testimonial here",
-    result: '+ Result badge',
-    name: 'Client Name',
-    title: 'Title, Company',
-    avatar: 'https://...',
-    featured: false,  // true = dark themed card
-  },
-];
-```
-
-### Adding a client logo
-
-```ts
-export const clientLogos = [
-  { name: 'Hector\'s Car Wash', url: 'https://...' },
-  { name: 'New Client', url: 'https://...' },  // add here
-];
-```
-
-## Deploying to Vercel
-
-### One-time setup
-
-1. Push this project to a new GitHub repository.
-2. Go to [vercel.com](https://vercel.com), sign in with GitHub.
-3. Click "Add New" → "Project" → import your repo.
-4. Vercel auto-detects Next.js. Click Deploy.
-5. Done. You'll get a `*.vercel.app` URL immediately.
-
-### Custom domain
-
-In your Vercel project: Settings → Domains → Add `growpalmbeach.com`. Vercel walks you through updating your DNS records. HTTPS is automatic.
-
-### Every future change
-
-```bash
-git add .
-git commit -m "Update hero copy"
-git push
-```
-
-Vercel automatically rebuilds and deploys. Every commit gets a preview URL so you can test before pushing to production.
-
-## SEO features included
-
-- Per-page meta titles + descriptions
-- Open Graph tags for social shares
-- Twitter card metadata
-- Structured data (LocalBusiness schema for Google rich results)
-- Auto-generated sitemap.xml
-- Auto-generated robots.txt
-- Canonical URLs
-- Optimized image loading (Next.js Image)
-- Font optimization (Google Fonts preloading)
-
-## What's NOT included (yet)
-
-- Analytics (recommend: Vercel Analytics — one click in dashboard, or GA4)
-- Meta Pixel for ad conversion tracking
-- Privacy policy + Terms pages (referenced in footer, need to be added)
-- Additional pages (services, blog, individual case studies)
-
-## Tech stack
-
-- **Framework:** Next.js 15 (App Router)
-- **Language:** TypeScript
-- **Styling:** CSS Modules (scoped, no conflicts)
-- **Fonts:** Inter + Fraunces via `next/font/google`
-- **Images:** `next/image` (auto WebP, lazy loading)
-- **Hosting:** Vercel (free tier is plenty for marketing sites)
-
-## Color tokens
-
-Defined in `app/globals.css` under `:root`. Change once, applies everywhere.
-
-```css
---coral-500: #E2693C;  /* primary action color */
---palm-500: #1D9E75;   /* trust/success */
---ink-900: #0B1F2D;    /* dark surfaces */
---sand-50: #FBF7F0;    /* warm background */
---gold-500: #D9A24A;   /* accent */
-```
+Push to GitHub → Vercel auto-builds. Uses Next.js ^15.1.6 (patched) + React ^18.3.1 (stable).
