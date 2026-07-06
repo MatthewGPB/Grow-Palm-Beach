@@ -13,7 +13,7 @@ export function Logos() {
               {logo.url ? (
                 <Image src={logo.url} alt={logo.name} width={160} height={60} className={styles.img} />
               ) : (
-                `CLIENT ${i + 1}`
+                logo.name
               )}
             </div>
           ))}

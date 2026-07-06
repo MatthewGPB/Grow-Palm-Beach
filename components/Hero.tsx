@@ -23,7 +23,7 @@ export function Hero() {
                 <span>{hero.primaryCta}</span>
                 <span className="btn-arrow"></span>
               </Link>
-              <Link href="#results" className="btn btn-secondary">
+              <Link href="#pricing" className="btn btn-secondary">
                 {hero.secondaryCta}
               </Link>
             </div>
@@ -38,7 +38,7 @@ export function Hero() {
             {images.hero ? (
               <Image
                 src={images.hero}
-                alt="Matthew Durn — Founder, Grow Palm Beach"
+                alt="Matthew Durnya — Founder, Grow Palm Beach"
                 fill
                 className={styles.heroImg}
                 priority

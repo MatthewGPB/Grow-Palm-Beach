@@ -24,7 +24,6 @@
   z-index: 1;
 }
 @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
-
 .image {
   aspect-ratio: 4/5;
   background: var(--ink-700);
@@ -43,7 +42,6 @@
   text-align: center;
   padding: 20px;
 }
-
 .h2 {
   font-family: 'Fraunces', serif;
   font-weight: 500;
@@ -60,7 +58,6 @@
   margin-bottom: 28px;
 }
 .body p + p { margin-top: 16px; }
-
 .creds {
   display: flex;
   gap: 24px;

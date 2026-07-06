@@ -9,7 +9,7 @@ export function Stats() {
           <span className="eyebrow eyebrow-gold">Real results</span>
           <h2 className={styles.title}>Numbers that move businesses, not vanity metrics.</h2>
           <p className={styles.sub}>
-            Every campaign tied to revenue. Reported monthly. Guaranteed in writing.
+            Every campaign tied to revenue. One-page report each month.
           </p>
         </div>
         <div className={styles.grid}>

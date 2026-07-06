@@ -7,9 +7,9 @@ export function Process() {
       <div className="container">
         <div className="section-head center">
           <span className="eyebrow">How it works</span>
-          <h2 className="section-title">From first call to first wins — in 30 days.</h2>
+          <h2 className="section-title">No jargon. No long contracts. No giant check up front.</h2>
           <p className="section-sub">
-            No bloated onboarding decks. No 6-month &quot;strategy&quot; phases. We move fast because your competitors aren&apos;t waiting.
+            I handle everything — you just answer the phone.
           </p>
         </div>
         <div className={styles.grid}>

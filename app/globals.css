@@ -1,7 +1,3 @@
-/* ============================================================
-   GROW PALM BEACH — Global Styles
-   ============================================================ */
-
 :root {
   --sand-50: #FBF7F0;
   --sand-100: #F4ECDC;
@@ -23,9 +19,7 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 17px;
@@ -34,12 +28,9 @@ body {
   background: var(--white);
   -webkit-font-smoothing: antialiased;
 }
-
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 button { font-family: inherit; cursor: pointer; }
-
-.serif { font-family: 'Fraunces', Georgia, serif; }
 
 .container {
   width: 100%;
@@ -48,7 +39,6 @@ button { font-family: inherit; cursor: pointer; }
   padding: 0 clamp(20px, 4vw, 40px);
 }
 
-/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -90,7 +80,6 @@ button { font-family: inherit; cursor: pointer; }
 .btn-arrow::after { content: "→"; transition: transform .2s ease; }
 .btn:hover .btn-arrow::after { transform: translateX(3px); }
 
-/* Common */
 .eyebrow {
   display: inline-block;
   font-size: 13px;
@@ -124,7 +113,6 @@ button { font-family: inherit; cursor: pointer; }
 section { padding: 100px 0; }
 @media (max-width: 700px) { section { padding: 70px 0; } }
 
-/* Pulse dot animation */
 .dot {
   width: 8px;
   height: 8px;

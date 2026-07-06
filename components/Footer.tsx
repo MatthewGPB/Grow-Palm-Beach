@@ -14,17 +14,16 @@ export function Footer() {
                 <span>{site.name}</span>
               </Link>
               <p>
-                Palm Beach&apos;s growth marketing agency. SEO, paid ads, websites, and
-                consulting — built for local businesses that want results.
+                AI-optimized websites and local marketing for Palm Beach businesses.
+                When locals search for what you do, you should be the one they call.
               </p>
             </div>
             <div>
-              <h5>Services</h5>
+              <h5>Plans</h5>
               <ul>
-                <li><Link href="/#services">Local SEO</Link></li>
-                <li><Link href="/#services">Google + Meta ads</Link></li>
-                <li><Link href="/#services">Websites</Link></li>
-                <li><Link href="/#services">Growth consulting</Link></li>
+                <li><Link href="/#pricing">Just a Website</Link></li>
+                <li><Link href="/#pricing">Growth Plan</Link></li>
+                <li><Link href="/#pricing">Full Growth</Link></li>
               </ul>
             </div>
             <div>
@@ -53,7 +52,7 @@ export function Footer() {
         </div>
       </footer>
       <div className={styles.mobileCta}>
-        <Link href="/book-call" className="btn btn-primary">Book free strategy call →</Link>
+        <Link href="/book-call" className="btn btn-primary">Book free 15-min call →</Link>
       </div>
     </>
   );

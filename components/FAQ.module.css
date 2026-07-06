@@ -5,7 +5,6 @@
   align-items: start;
 }
 @media (max-width: 900px) { .grid { grid-template-columns: 1fr; gap: 30px; } }
-
 .sub {
   font-size: 18px;
   color: var(--ink-500);
@@ -13,7 +12,6 @@
   margin-top: 12px;
 }
 .phone { color: var(--coral-500); font-weight: 600; }
-
 .list { border-top: 1px solid rgba(11,31,45,0.1); }
 .item { border-bottom: 1px solid rgba(11,31,45,0.1); }
 .q {

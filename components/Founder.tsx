@@ -10,7 +10,7 @@ export function Founder() {
         <div className={styles.grid}>
           <div className={styles.image}>
             {images.founder ? (
-              <Image src={images.founder} alt="Matthew Durn — Founder" fill className={styles.img} sizes="(max-width: 900px) 100vw, 500px" />
+              <Image src={images.founder} alt="Matthew Durnya — Founder" fill className={styles.img} sizes="(max-width: 900px) 100vw, 500px" />
             ) : (
               <div className={styles.placeholder}>Founder image</div>
             )}

@@ -6,11 +6,12 @@ import { BookCallFAQ } from '@/components/BookCallFAQ';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Book a free strategy call',
-  description: "Book a free 30-minute call with Matthew Durn. We'll audit your marketing and map out a 90-day growth plan. Free, no obligation, $500 ad credit included.",
+  title: 'Book a free 15-minute call',
+  description:
+    "15 minutes, free. No pitch, no pressure — Matthew will look at your current setup and tell you exactly what he'd fix first.",
   openGraph: {
-    title: `Book a strategy call — ${site.name}`,
-    description: 'Free 30-min call with Matthew. Custom 90-day growth plan included.',
+    title: `Book a free call — ${site.name}`,
+    description: "15 minutes, free. I'll tell you exactly what I'd fix first.",
   },
   alternates: { canonical: `${site.url}/book-call` },
 };
@@ -24,7 +25,6 @@ export default function BookCallPage() {
       />
       <div className={styles.page}>
         <div className="container">
-          {/* HEAD */}
           <div className={styles.head}>
             <span className={styles.eyebrow}>
               <span className="dot"></span> {bookCall.eyebrow}
@@ -37,9 +37,7 @@ export default function BookCallPage() {
             <p className={styles.sub}>{bookCall.sub}</p>
           </div>
 
-          {/* GRID */}
           <div className={styles.grid}>
-            {/* LEFT */}
             <div className={styles.info}>
               <div className={styles.host}>
                 {images.founder ? (
@@ -78,7 +76,6 @@ export default function BookCallPage() {
               </div>
             </div>
 
-            {/* RIGHT — Calendly */}
             <div className={styles.cal}>
               <div className={styles.calHead}>
                 <h2 className={styles.calH2}>Pick a time</h2>
@@ -92,7 +89,6 @@ export default function BookCallPage() {
             </div>
           </div>
 
-          {/* TRUST */}
           <div className={styles.trust}>
             <div className={styles.trustCard}>
               <div className={styles.trustNum}>3<span>x</span></div>
@@ -103,16 +99,15 @@ export default function BookCallPage() {
               <div className={styles.trustLabel}>Palm Beach businesses scaled</div>
             </div>
             <div className={styles.trustCard}>
-              <div className={styles.trustNum}>5.0<span>★</span></div>
-              <div className={styles.trustLabel}>Average client rating</div>
+              <div className={styles.trustNum}>30<span>d</span></div>
+              <div className={styles.trustLabel}>Website built and live</div>
             </div>
             <div className={styles.trustCard}>
               <div className={styles.trustNum}>100<span>%</span></div>
-              <div className={styles.trustLabel}>Money-back guarantee</div>
+              <div className={styles.trustLabel}>Founder-led — you get Matthew</div>
             </div>
           </div>
 
-          {/* TESTIMONIAL */}
           <div className={styles.testi}>
             <div className={styles.testiInner}>
               <div className={styles.testiStars}>★★★★★</div>
@@ -123,7 +118,6 @@ export default function BookCallPage() {
             </div>
           </div>
 
-          {/* FAQ */}
           <BookCallFAQ faqs={bookCall.faqs} />
         </div>
       </div>

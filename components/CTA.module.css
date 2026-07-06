@@ -29,12 +29,7 @@
   margin: 0 auto 36px;
   line-height: 1.55;
 }
-.actions {
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+.actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 .meta {
   margin-top: 28px;
   font-size: 14px;
@@ -44,8 +39,4 @@
   gap: 24px;
   flex-wrap: wrap;
 }
-.meta span::before {
-  content: "✓ ";
-  color: var(--palm-500);
-  margin-right: 4px;
-}
+.meta span::before { content: "✓ "; color: var(--palm-500); margin-right: 4px; }

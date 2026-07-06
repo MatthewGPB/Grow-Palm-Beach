@@ -54,8 +54,4 @@
   margin-bottom: 10px;
 }
 .num span { color: var(--coral-500); }
-.label {
-  font-size: 14px;
-  color: rgba(255,255,255,0.7);
-  line-height: 1.5;
-}
+.label { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.5; }

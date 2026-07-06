@@ -21,7 +21,7 @@ export function Header() {
               <span>{site.name}</span>
             </Link>
             <div className={styles.links}>
-              <Link href="/#services">Services</Link>
+              <Link href="/#pricing">Pricing</Link>
               <Link href="/#results">Results</Link>
               <Link href="/#process">How it works</Link>
               <Link href="/#faq">FAQ</Link>

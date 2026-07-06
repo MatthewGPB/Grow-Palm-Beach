@@ -15,16 +15,13 @@ export function FAQ() {
             <span className="eyebrow">Common questions</span>
             <h2 className="section-title">Before you book.</h2>
             <p className={styles.sub}>
-              Don&apos;t see your question? Text Matthew directly at{' '}
+              Don&apos;t see your question? Call or text me directly at{' '}
               <a href={`tel:${site.phoneRaw}`} className={styles.phone}>{site.phone}</a>.
             </p>
           </div>
           <div className={styles.list}>
             {faqs.map((faq, i) => (
-              <div
-                key={i}
-                className={`${styles.item} ${openIndex === i ? styles.open : ''}`}
-              >
+              <div key={i} className={`${styles.item} ${openIndex === i ? styles.open : ''}`}>
                 <button
                   className={styles.q}
                   onClick={() => setOpenIndex(openIndex === i ? null : i)}

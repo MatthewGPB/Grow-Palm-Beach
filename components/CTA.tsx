@@ -8,19 +8,19 @@ export function CTA() {
       <div className="container">
         <div className={styles.inner}>
           <h2 className={styles.h2}>
-            Ready to <em>3x your leads</em> in the next 90 days?
+            When locals search, <em>be the one they call</em>.
           </h2>
           <p className={styles.sub}>
-            Book a free 30-minute strategy call with Matthew. Walk away with a clear plan — whether you hire us or not.
+            15 minutes, free. No pitch, no pressure — I&apos;ll tell you exactly what I&apos;d fix first.
           </p>
           <div className={styles.actions}>
-            <Link href="/book-call" className="btn btn-primary">Book free strategy call →</Link>
+            <Link href="/book-call" className="btn btn-primary">Book a free 15-min call →</Link>
             <a href={`tel:${site.phoneRaw}`} className="btn btn-light">Call {site.phone}</a>
           </div>
           <div className={styles.meta}>
-            <span>No pitch deck</span>
-            <span>No obligation</span>
-            <span>Real strategy on the call</span>
+            <span>No pitch</span>
+            <span>No pressure</span>
+            <span>Real advice either way</span>
           </div>
         </div>
       </div>

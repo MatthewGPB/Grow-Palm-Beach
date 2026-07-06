@@ -26,16 +26,16 @@ export const metadata: Metadata = {
     template: `%s — ${site.name}`,
   },
   description:
-    "SEO, Google Ads, websites, and growth consulting for Palm Beach businesses. 3x your leads in 90 days — guaranteed. Free strategy call + $500 ad credit.",
+    'AI-optimized websites and local marketing for Palm Beach businesses. Show up on Google and get recommended by AI tools like ChatGPT. Websites from $3,000, growth plans from $750/mo.',
   keywords: [
     'Palm Beach SEO',
-    'Palm Beach marketing agency',
+    'Palm Beach marketing',
+    'AI-optimized website',
+    'local SEO West Palm Beach',
     'Google Ads Palm Beach',
-    'West Palm Beach marketing',
-    'local SEO Palm Beach',
-    'Shopify development Palm Beach',
+    'website design Palm Beach',
   ],
-  authors: [{ name: 'Matthew Durn' }],
+  authors: [{ name: 'Matthew Durnya' }],
   creator: 'Grow Palm Beach',
   openGraph: {
     type: 'website',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `${site.name} — ${site.tagline}`,
     description:
-      "SEO, Google Ads, websites, and growth consulting for Palm Beach businesses. 3x your leads in 90 days — guaranteed.",
+      'AI-optimized websites and local marketing for Palm Beach businesses. When locals search for what you do, you should be the one they call.',
     images: images.ogImage
       ? [{ url: images.ogImage, width: 1200, height: 630, alt: site.name }]
       : [],
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `${site.name} — ${site.tagline}`,
-    description: '3x your leads in 90 days — guaranteed. Palm Beach growth marketing.',
+    description: 'AI-optimized websites and local marketing for Palm Beach businesses.',
     images: images.ogImage ? [images.ogImage] : [],
   },
   robots: {
@@ -63,15 +63,16 @@ export const metadata: Metadata = {
   alternates: { canonical: site.url },
 };
 
-// Structured data for local SEO (Google rich results)
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: site.name,
-  description: 'Palm Beach growth marketing agency. SEO, paid ads, websites, and consulting.',
+  description:
+    'AI-optimized websites and local marketing for Palm Beach businesses. Local SEO, Google Business Profile optimization, and paid ads.',
   url: site.url,
   telephone: site.phoneRaw,
   email: site.email,
+  founder: { '@type': 'Person', name: 'Matthew Durnya' },
   address: {
     '@type': 'PostalAddress',
     streetAddress: '700 S Rosemary Ave Ste 204',
@@ -80,11 +81,7 @@ const localBusinessSchema = {
     postalCode: '33401',
     addressCountry: 'US',
   },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 26.7056,
-    longitude: -80.0571,
-  },
+  geo: { '@type': 'GeoCoordinates', latitude: 26.7056, longitude: -80.0571 },
   priceRange: '$$',
   areaServed: 'Palm Beach County, Florida',
 };

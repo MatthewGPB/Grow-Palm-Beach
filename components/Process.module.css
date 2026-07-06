@@ -31,8 +31,4 @@
   margin-bottom: 10px;
   letter-spacing: -0.01em;
 }
-.p {
-  font-size: 15px;
-  color: var(--ink-500);
-  line-height: 1.55;
-}
+.p { font-size: 15px; color: var(--ink-500); line-height: 1.55; }
