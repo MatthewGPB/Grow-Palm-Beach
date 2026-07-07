@@ -22,21 +22,18 @@ export const site = {
 };
 
 export const images = {
-  hero: 'https://cdn.shopify.com/s/files/1/0596/9356/4033/files/Founder_Image.jpg?v=1778849390', // → move to /images/hero.jpg
-  founder: 'https://cdn.shopify.com/s/files/1/0596/9356/4033/files/Founder_Image.jpg?v=1778849390', // → move to /images/founder.jpg
+  hero: '/images/founder.jpg',
+  founder: '/images/founder.jpg',
   caseStudy: '',
   ogImage: '',
 };
 
 export const clientLogos = [
-  {
-    name: "Hector's Car Wash",
-    url: 'https://cdn.shopify.com/s/files/1/0596/9356/4033/files/hectors_car_wash_transparent.png?v=1763678660',
-  },
-  { name: "Antonio's Italian Market", url: '' },
-  { name: 'Client 3', url: '' },
-  { name: 'Client 4', url: '' },
-  { name: 'Client 5', url: '' },
+  { name: "Hector's Car Wash", url: '/images/hectors_car_wash_logo.png' },
+  { name: 'Brothers Taquizas', url: '/images/BT_Logo.png' },
+  { name: 'PAM Executive Parking', url: '/images/PAM_logo.png' },
+  { name: 'RLB', url: '/images/RLB_Logo.png' },
+  { name: 'LAEG', url: '/images/laeg_logo.png' },
 ];
 
 export const announcement = {
