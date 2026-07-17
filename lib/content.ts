@@ -14,8 +14,8 @@ export const site = {
   name: 'Grow Palm Beach',
   tagline: 'AI-Optimized Local Marketing for Palm Beach Businesses',
   url: 'https://growpalmbeach.com',
-  phone: '(561) 316-7465',
-  phoneRaw: '+15613167465',
+  phone: '(561) 401-0695',
+  phoneRaw: '+15614010695',
   email: 'matthew@growpalmbeach.com',
   address: '700 S Rosemary Ave Ste 204, West Palm Beach, FL 33401',
   calendly: 'https://calendly.com/matthewdurnya/30min',
@@ -52,7 +52,7 @@ export const hero = {
   primaryCta: 'Book a free 15-min call',
   secondaryCta: 'See plans + pricing',
   trustHeadline: 'Trusted by Palm Beach businesses',
-  trustSub: "Hector's Car Wash · Antonio's Italian Market",
+  trustSub: "Hector's Car Wash · Antonio's Italian Market · Brothers Taquizas",
   floatCard1: { label: '+312% leads', sub: 'Local home services client' },
   floatCard2: { label: 'Ranked #1', sub: '"SEO Palm Beach" — Google' },
 };
@@ -76,7 +76,7 @@ export const stats = [
   { num: '100', suffix: '%', label: 'Founder-led — you work directly with Matthew' },
 ];
 
-// Three-tier pricing (replaces old Services section)
+// Three-tier pricing
 export const pricing = {
   eyebrow: 'Plans + pricing',
   title: 'Pick the plan that fits where you are.',
@@ -155,26 +155,26 @@ export const processSteps = [
 
 export const testimonials = [
   {
-    quote: "Matthew rebuilt our SEO from scratch and we went from page 4 to ranking #1 for our biggest keywords in under 90 days. Booked solid every weekend now.",
-    result: 'Ranking #1 on Google',
-    name: 'Client name',
-    title: "Owner, Hector's Car Wash",
+    quote: "One week after our new site went live, we landed our biggest catering order ever.",
+    result: 'Biggest order in week one',
+    name: 'Brothers Taquizas',
+    title: 'Catering · Palm Beach County',
     avatar: '',
     featured: false,
   },
   {
-    quote: "Our lead volume tripled in the first 60 days. The ROI on the ads alone paid for the whole engagement twice over. Best marketing decision we've made.",
-    result: '312% lead growth',
-    name: 'Client name',
-    title: "Owner, Antonio's Italian Market",
+    quote: "Our old site was a one-pager from 2021 built by a company we could never get ahold of. The site Matthew built books detailing appointments for us around the clock — it's paid for itself more than 10 times over, and our monthly bill is actually lower than what we were paying before.",
+    result: 'Paid for itself 10x over',
+    name: "Hector's Car Wash",
+    title: 'Car Wash & Detailing · West Palm Beach',
     avatar: '',
     featured: true,
   },
   {
-    quote: "Finally a marketer who doesn't disappear after the contract is signed. Matthew texts back same day, reports are tied to actual revenue, no fluff.",
-    result: 'Direct founder access',
-    name: 'Client name',
-    title: 'CEO, PAM Executive Parking',
+    quote: "Our website had the wrong phone number and outdated information for who knows how long. Matthew is the first person I've paid where I genuinely feel like I'm getting something for my money. I've had some bad experiences — this is not one of them.",
+    result: 'Wrong number fixed, calls coming in',
+    name: "Antonio's Italian Market",
+    title: 'Italian Market · Palm Beach County',
     avatar: '',
     featured: false,
   },
@@ -250,9 +250,9 @@ export const bookCall = {
     'Clear pricing if you want it — websites start at $3,000, plans at $750/mo',
   ],
   testimonial: {
-    quote: "The call with Matthew was more useful than three months of meetings with our last agency. He had our plan mapped out before we even signed anything.",
-    author: 'Client name',
-    title: "Owner, Hector's Car Wash",
+    quote: "Matthew is the first person I've paid where I genuinely feel like I'm getting something for my money. I've had some bad experiences — this is not one of them.",
+    author: "Antonio's Italian Market",
+    title: 'Palm Beach County',
   },
   faqs: [
     {
